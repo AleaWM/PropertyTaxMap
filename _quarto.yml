@@ -1,0 +1,9 @@
+project:
+  type: book
+  
+book: 
+  title: "Cook County Property Tax Analyses"
+  author: "Alea Wilbur-Mujtaba"
+  chapters:
+    - index.qmd
+    - Township_Burden_Shift.qmd
