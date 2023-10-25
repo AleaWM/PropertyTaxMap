@@ -1,9 +1,51 @@
 project:
   type: book
+  output-dir: docs
   
 book: 
   title: "Cook County Property Tax Analyses"
-  author: "Alea Wilbur-Mujtaba"
+  subtitle: "Research for GFRC & CMAP"
+  author: "Alea Wilbur-Mujtaba & Michael Van Hulle"
   chapters:
     - index.qmd
     - Township_Burden_Shift.qmd
+
+  navbar: 
+    right: 
+      - icon: github
+        href: https://github.com/AleaWM/Levy_Elasticity
+    left:
+      - text: "About"
+        file: index.qmd
+      - text: "Data"
+        href: https://github.com/AleaWM/Levy_Elasticity/tree/main/data
+
+
+          
+
+# site-url: https://aleawm.github.io/Proptery_Tax_Map/
+#  repo-actions: [edit]
+#  downloads: [pdf, epub]
+#  sharing: [twitter, facebook]
+   # sidebar:
+      #title: "On this page"
+
+
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    code-overflow: wrap
+    df-print: paged
+    theme: 
+      light: lightly
+      dark: darkly
+    fig-cap-location: top
+    tbl-cap-location: top
+    
+ 
+bibliography: references.bib
+reference-location: margin
+citation-location: margin
+
+editor: visual
